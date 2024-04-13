@@ -8,11 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      colors: {
+        'discord-blue': '#7289da',
+        'discord-100': '#b5bac1',
+        'discord-300': '#313338',
+        'discord-600': '#2b2d31',
+        'discord-900': '#1e1f22',
+      }
     },
   },
   plugins: [],
