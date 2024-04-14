@@ -2,17 +2,12 @@ import { pageRoutes } from '../types/routes.types';
 
 export default function Navbar(props: { routes: pageRoutes[] }) {
   return (
-    <nav className='dark:bg-discord-900 fixed start-0 top-0 z-20 w-full border-b border-gray-200 bg-white dark:border-stone-600'>
+    <nav className='fixed start-0 top-0 z-20 w-full shadow-lg dark:bg-discord-600'>
       <div className='mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-3'>
-        <a href='/' className='flex items-center space-x-3 rtl:space-x-reverse'>
-          <span className='self-center whitespace-nowrap text-4xl font-semibold dark:text-white'>
-            React App
-          </span>
-        </a>
-        <div className='flex items-center space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse'>
+        <div className='flex w-full items-center justify-between space-x-3 md:order-2 md:w-auto md:justify-normal md:space-x-0 rtl:space-x-reverse'>
           <a
             href='#'
-            className='hover:bg-discord-300 rounded border border-gray-200 bg-transparent px-4 py-2 font-semibold hover:text-white dark:text-white dark:hover:text-white'
+            className='rounded border border-gray-200 bg-transparent px-4 py-2 font-semibold hover:bg-discord-300 hover:text-white dark:text-white dark:hover:text-white'
           >
             Account
           </a>
@@ -45,17 +40,18 @@ export default function Navbar(props: { routes: pageRoutes[] }) {
           className='hidden w-full items-center justify-between md:order-1 md:flex md:w-auto'
           id='navbar-sticky'
         >
-          <ul className='mt-4 flex flex-col rounded-lg border border-gray-100 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse'>
+          <ul className='mt-4 flex flex-col rounded-lg border-0 border-gray-100 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border md:border-0 md:p-0 rtl:space-x-reverse'>
             {props.routes.map((page, i) => (
-              <li key={i} className='md:dark:hover:bg-discord-300 rounded p-3'>
-                <a
-                  href={page.url}
-                  className='block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 md:p-0 md:hover:bg-transparent md:hover:text-stone-300 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-stone-100'
-                  aria-current='page'
-                >
+              <a
+                key={i}
+                href={page.url}
+                className='block rounded px-3 py-2 md:p-0 md:hover:bg-transparent md:hover:text-stone-300 dark:border-gray-700 dark:text-white dark:hover:bg-discord-300 dark:hover:text-white md:dark:hover:bg-transparent md:dark:hover:text-stone-100'
+                aria-current='page'
+              >
+                <li className='rounded p-3 md:dark:hover:bg-discord-300'>
                   {page.title}
-                </a>
-              </li>
+                </li>
+              </a>
             ))}
           </ul>
         </div>

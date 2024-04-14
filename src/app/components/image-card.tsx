@@ -6,6 +6,7 @@ export default function ImageCard(props: ImageCardType) {
     <main className='flex flex-col items-center gap-10'>
       <h1 className='text-4xl'>{props.title}</h1>
       <Image
+        className='shadow-2xl'
         src={props.image.url}
         alt={props.image.alt}
         width={200}

@@ -14,16 +14,16 @@ export const metadata: Metadata = {
 
 const pages: pageRoutes[] = [
   {
+    title: 'Home',
+    url: '/',
+  },
+  {
     title: 'Dashboard',
     url: '/dashboard',
   },
   {
     title: 'Messenger',
     url: '/messenger',
-  },
-  {
-    title: 'Link 3',
-    url: '#',
   },
 ];
 
@@ -34,10 +34,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
+      <head>
+        <link
+          href='https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css'
+          rel='stylesheet'
+        />
+      </head>
       <body className={inter.className}>
         <Navbar routes={pages}></Navbar>
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
         {children}
         <Footer></Footer>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js'></script>
       </body>
     </html>
   );
