@@ -1,6 +1,6 @@
-import { pageRoutes } from '../types/routes.types';
+import { routesType } from '../types/routes.types';
 
-export default function Navbar(props: { routes: pageRoutes[] }) {
+export default function Navbar(props: { routes: routesType[] }) {
   return (
     <nav className='fixed start-0 top-0 z-20 w-full shadow-lg dark:bg-discord-600'>
       <div className='mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-3'>
@@ -40,7 +40,7 @@ export default function Navbar(props: { routes: pageRoutes[] }) {
           className='hidden w-full items-center justify-between md:order-1 md:flex md:w-auto'
           id='navbar-sticky'
         >
-          <ul className='mt-4 flex flex-col rounded-lg border-0 border-gray-100 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border md:border-0 md:p-0 rtl:space-x-reverse'>
+          <ul className='mt-4 flex flex-col rounded-lg border-0 border-gray-100 p-4 font-medium md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 rtl:space-x-reverse'>
             {props.routes.map((page, i) => (
               <a
                 key={i}

@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-import { pageRoutes } from './types/routes.types';
+import { routesType } from './types/routes.types';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: 'NextJS Project',
 };
 
-const pages: pageRoutes[] = [
+const pages: routesType[] = [
   {
     title: 'Home',
     url: '/',
@@ -47,7 +47,10 @@ export default function RootLayout({
         <div id='stars3'></div>
         {children}
         <Footer></Footer>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js'></script>
+        <script
+          src='https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js'
+          async
+        ></script>
       </body>
     </html>
   );

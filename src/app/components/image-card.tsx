@@ -11,6 +11,7 @@ export default function ImageCard(props: ImageCardType) {
         alt={props.image.alt}
         width={200}
         height={200}
+        priority
       />
       <p>{props.text}</p>
     </main>
