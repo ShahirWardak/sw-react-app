@@ -9,7 +9,7 @@ export default function Navbar(props: { routes: routesType[] }) {
             href='#'
             className='rounded border border-gray-200 bg-transparent px-4 py-2 font-semibold hover:bg-discord-300 hover:text-white dark:text-white dark:hover:text-white'
           >
-            Account
+            Just a button
           </a>
           <button
             data-collapse-toggle='navbar-sticky'

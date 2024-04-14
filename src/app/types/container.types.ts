@@ -1,5 +1,5 @@
 export type containerType = {
-    title: string;
     children: Readonly<React.ReactNode>;
+    title?: string;
     position?: 'left' | 'center' | 'right';
 }

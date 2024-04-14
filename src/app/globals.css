@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import '../../public/stars.css';
+@import '../../public/flowbite.css';
 
 :root {
   --foreground-rgb: 0, 0, 0;
