@@ -1,4 +1,4 @@
-export type imageLogo = {
+type imageLogo = {
     src: string;
     alt: string;
     width: number;
