@@ -1,0 +1,14 @@
+export type imageLogo = {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+    invert?: boolean;
+    priorty?: boolean;
+}
+
+export type LogoTextType = {
+    children: Readonly<React.ReactNode>;
+    alignment?: 'normal' | 'reverse';
+    logos: imageLogo[];
+}

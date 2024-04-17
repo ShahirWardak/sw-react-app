@@ -12,7 +12,7 @@ export default function Footer() {
         >
           <Image
             className='me-2 h-4 w-4 invert'
-            src='/github.svg'
+            src='/svg/github.svg'
             alt='GitHub Logo'
             width={20}
             height={20}
@@ -29,7 +29,7 @@ export default function Footer() {
         >
           <Image
             className='me-2 h-4 w-4'
-            src='/linkedin.svg'
+            src='/svg/linkedin.svg'
             alt='LinkedIn Logo'
             width={20}
             height={20}
