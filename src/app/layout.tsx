@@ -18,8 +18,8 @@ const pages: routesType[] = [
     url: '/',
   },
   {
-    title: 'Dashboard',
-    url: '/dashboard',
+    title: 'Projects',
+    url: '/projects',
   },
   {
     title: 'Messenger',
