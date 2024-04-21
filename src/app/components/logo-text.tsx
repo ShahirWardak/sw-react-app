@@ -9,7 +9,9 @@ export default function LogoText(props: LogoTextType) {
           'mt-10 flex flex-col items-center md:mt-0 ' +
           (props.alignment === 'reverse'
             ? 'md:flex-row-reverse'
-            : 'md:flex-row')
+            : 'md:flex-row') +
+          ' ' +
+          props.justify
         }
       >
         <div className='flex flex-col items-center md:w-1/4 md:min-w-fit md:p-10'>
@@ -29,6 +31,24 @@ export default function LogoText(props: LogoTextType) {
           ))}
         </div>
         <>{props.children}</>
+        {props.logosAfter ? (
+          <div className='mt-5 flex flex-col items-center md:mt-0 md:w-1/4 md:min-w-fit md:p-10'>
+            {props.logosAfter?.map((logo, i) => (
+              <Image
+                key={i}
+                className={
+                  'relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] ' +
+                  (logo.invert ? 'dark:invert' : '')
+                }
+                src={logo.src}
+                alt={logo.alt}
+                width={logo.width}
+                height={logo.height}
+                priority
+              />
+            ))}
+          </div>
+        ) : null}
       </div>
     </>
   );

@@ -3,7 +3,7 @@ import { IconListType } from '../types/icon-list.types';
 
 export default function IconList(props: IconListType) {
   return (
-    <div className='flex flex-wrap justify-center gap-2'>
+    <div className='mt-4 flex flex-wrap justify-center gap-4'>
       {props.icons.map((logo, i) => (
         <Image
           key={i}
@@ -13,8 +13,8 @@ export default function IconList(props: IconListType) {
           }
           src={logo.src}
           alt={logo.alt}
-          width={50}
-          height={50}
+          width={35}
+          height={35}
           priority
         />
       ))}
