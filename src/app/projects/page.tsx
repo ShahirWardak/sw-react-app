@@ -30,7 +30,7 @@ export default function Projects() {
               },
             ]}
           >
-            <div className='mt-5 flex-col lg:mt-0 lg:min-w-fit lg:text-left'>
+            <div className='mt-5 flex-col p-5 lg:mt-0 lg:min-w-fit lg:text-left'>
               <a
                 href='https://www.rspb.org.uk'
                 className='font-medium text-blue-600 underline underline-offset-2 dark:text-blue-500'
@@ -49,7 +49,7 @@ export default function Projects() {
                 <li>Chromatic, Storyboard</li>
                 <li>GitHub actions build pipelines</li>
               </ul>
-              <div className='m-4 mt-10 lg:m-0'>
+              <div className='m-4 lg:m-0'>
                 <IconList
                   icons={[
                     {
@@ -125,7 +125,7 @@ export default function Projects() {
               },
             ]}
           >
-            <div className='mt-5 flex-col lg:mt-0 lg:min-w-fit lg:text-left'>
+            <div className='mt-5 flex-col p-5 lg:mt-0 lg:min-w-fit lg:text-left'>
               <ul className='mt-5 list-inside list-disc text-left'>
                 <li>Django framework</li>
                 <li>HTML, CSS, Python</li>
@@ -134,7 +134,7 @@ export default function Projects() {
                 <li>Trello</li>
                 <li>GitHub</li>
               </ul>
-              <div className='m-4 mt-10 lg:m-0'>
+              <div className='m-4 lg:m-0'>
                 <IconList
                   icons={[
                     {
@@ -165,6 +165,57 @@ export default function Projects() {
                       src: '/svg/github.svg',
                       alt: 'GitHub Logo',
                       invert: true,
+                    },
+                  ]}
+                ></IconList>
+              </div>
+            </div>
+          </LogoText>
+        </Container>
+      </div>
+
+      <div className='m-5 mt-11 lg:mt-20'>
+        <Container>
+          <h1 className='text-4xl font-semibold lg:mb-5'>Unity Engine game</h1>
+          <LogoText
+            justify='justify-center'
+            logos={[
+              {
+                src: '/images/unity-game-logo.jpg',
+                alt: 'Unity Logo',
+                width: 150,
+                height: 50,
+              },
+            ]}
+            logosAfter={[
+              {
+                src: '/videos/unity-gameplay.gif',
+                alt: 'My game gameplay animation',
+                width: 400,
+                height: 150,
+              },
+            ]}
+          >
+            <div className='mt-5 flex-col p-5 lg:mt-0 lg:min-w-fit lg:text-left'>
+              <ul className='mt-5 list-inside list-disc text-left'>
+                <li>Unity game engine</li>
+                <li>C# scripts</li>
+                <li>3D models</li>
+                <li>Animation</li>
+                <li>Mesh render</li>
+                <li>AI pathing</li>
+              </ul>
+              <div className='m-4 lg:m-0'>
+                <IconList
+                  icons={[
+                    {
+                      src: '/svg/unity.svg',
+                      alt: 'Unity Logo',
+                      invert: true,
+                    },
+                    {
+                      src: '/svg/csharp.svg',
+                      alt: 'C# Logo',
                     },
                   ]}
                 ></IconList>
