@@ -2,13 +2,15 @@ import Container from '../components/container';
 import IconList from '../components/icon-list';
 import LogoText from '../components/logo-text';
 
-export default function Dashboard() {
+export default function Projects() {
   return (
     <main className='mt-28 flex flex-col items-center justify-between'>
       <h1 className='text-5xl font-semibold'>PROJECTS</h1>
-      <div className='m-5 mt-11 md:mt-20'>
+      <div className='m-5 mt-11 lg:mt-20'>
         <Container>
-          <h1 className='text-4xl font-semibold md:mb-5'>RSPB</h1>
+          <h1 className='text-4xl font-semibold lg:mb-5'>
+            RSPB Angular website
+          </h1>
           <LogoText
             justify='justify-center'
             logos={[
@@ -28,7 +30,7 @@ export default function Dashboard() {
               },
             ]}
           >
-            <div className='mt-5 flex-col md:mt-0 md:min-w-fit md:text-left'>
+            <div className='mt-5 flex-col lg:mt-0 lg:min-w-fit lg:text-left'>
               <a
                 href='https://www.rspb.org.uk'
                 className='font-medium text-blue-600 underline underline-offset-2 dark:text-blue-500'
@@ -47,7 +49,7 @@ export default function Dashboard() {
                 <li>Chromatic, Storyboard</li>
                 <li>GitHub actions build pipelines</li>
               </ul>
-              <div className='m-4 mt-10 md:m-0'>
+              <div className='m-4 mt-10 lg:m-0'>
                 <IconList
                   icons={[
                     {
@@ -99,9 +101,11 @@ export default function Dashboard() {
         </Container>
       </div>
 
-      <div className='m-5 mt-11 md:mt-20'>
+      <div className='m-5 mt-11 lg:mt-20'>
         <Container>
-          <h1 className='text-4xl font-semibold md:mb-5'>IAMFLEXI</h1>
+          <h1 className='text-4xl font-semibold lg:mb-5'>
+            IAMFLEXI Django application
+          </h1>
           <LogoText
             justify='justify-center'
             logos={[
@@ -121,7 +125,7 @@ export default function Dashboard() {
               },
             ]}
           >
-            <div className='mt-5 flex-col md:mt-0 md:min-w-fit md:text-left'>
+            <div className='mt-5 flex-col lg:mt-0 lg:min-w-fit lg:text-left'>
               <ul className='mt-5 list-inside list-disc text-left'>
                 <li>Django framework</li>
                 <li>HTML, CSS, Python</li>
@@ -130,7 +134,7 @@ export default function Dashboard() {
                 <li>Trello</li>
                 <li>GitHub</li>
               </ul>
-              <div className='m-4 mt-10 md:m-0'>
+              <div className='m-4 mt-10 lg:m-0'>
                 <IconList
                   icons={[
                     {
