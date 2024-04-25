@@ -6,13 +6,11 @@ export default function Projects() {
   return (
     <main className='mt-28 flex flex-col items-center justify-between'>
       <h1 className='text-5xl font-semibold'>PROJECTS</h1>
-      <div className='m-5 mt-11 lg:mt-20'>
+      <div className='m-5 mt-11 md:mt-20 md:w-full md:px-20'>
         <Container>
-          <h1 className='text-4xl font-semibold lg:mb-5'>
-            RSPB Angular website
-          </h1>
+          <h1 className='text-4xl font-semibold lg:mb-5'>Angular website</h1>
           <LogoText
-            justify='justify-center'
+            justify='justify-between'
             logos={[
               {
                 src: '/images/rspb-logo.png',
@@ -101,13 +99,11 @@ export default function Projects() {
         </Container>
       </div>
 
-      <div className='m-5 mt-11 lg:mt-20'>
+      <div className='m-5 mt-11 md:mt-20 md:w-full md:px-20'>
         <Container>
-          <h1 className='text-4xl font-semibold lg:mb-5'>
-            IAMFLEXI Django application
-          </h1>
+          <h1 className='text-4xl font-semibold lg:mb-5'>Django application</h1>
           <LogoText
-            justify='justify-center'
+            justify='justify-between'
             logos={[
               {
                 src: '/images/iamflexi-logo.png',
@@ -174,11 +170,11 @@ export default function Projects() {
         </Container>
       </div>
 
-      <div className='m-5 mt-11 lg:mt-20'>
+      <div className='m-5 mt-11 md:mt-20 md:w-full md:px-20'>
         <Container>
           <h1 className='text-4xl font-semibold lg:mb-5'>Unity Engine game</h1>
           <LogoText
-            justify='justify-center'
+            justify='justify-between'
             logos={[
               {
                 src: '/images/unity-game-logo.jpg',
@@ -216,6 +212,114 @@ export default function Projects() {
                     {
                       src: '/svg/csharp.svg',
                       alt: 'C# Logo',
+                    },
+                  ]}
+                ></IconList>
+              </div>
+            </div>
+          </LogoText>
+        </Container>
+      </div>
+
+      <div className='m-5 mt-11 md:mt-20 md:w-full md:px-20'>
+        <Container>
+          <h1 className='text-4xl font-semibold lg:mb-5'>Blazor application</h1>
+          <LogoText
+            justify='justify-between'
+            logos={[
+              {
+                src: '/svg/blazor.svg',
+                alt: 'Blazor Logo',
+                width: 150,
+                height: 50,
+              },
+            ]}
+            logosAfter={[
+              {
+                src: '/images/blazor-site.png',
+                alt: 'My blazor site',
+                width: 400,
+                height: 150,
+              },
+            ]}
+          >
+            <div className='mt-5 flex-col p-5 lg:mt-0 lg:min-w-fit lg:text-left'>
+              <ul className='mt-5 list-inside list-disc text-left'>
+                <li>Blazor</li>
+                <li>C#</li>
+                <li>.NET Core</li>
+                <li>Azure static & server-side web apps</li>
+                <li>Azure functions</li>
+                <li>Github build actions</li>
+              </ul>
+              <div className='m-4 lg:m-0'>
+                <IconList
+                  icons={[
+                    {
+                      src: '/svg/blazor.svg',
+                      alt: 'Blazor Logo',
+                    },
+                    {
+                      src: '/svg/csharp.svg',
+                      alt: 'C# Logo',
+                    },
+                    {
+                      src: '/svg/dotnetcore.svg',
+                      alt: 'DotNet Core Logo',
+                    },
+                    {
+                      src: '/svg/Azure.svg',
+                      alt: 'Azure Logo',
+                    },
+                    {
+                      src: '/svg/github.svg',
+                      alt: 'Github Logo',
+                      invert: true,
+                    },
+                  ]}
+                ></IconList>
+              </div>
+            </div>
+          </LogoText>
+        </Container>
+      </div>
+
+      <div className='m-5 mt-11 md:mt-20 md:w-full md:px-20'>
+        <Container>
+          <h1 className='text-4xl font-semibold lg:mb-5'>AI Gomoku player</h1>
+          <LogoText
+            justify='justify-between'
+            logos={[
+              {
+                src: '/images/java-ai-game.png',
+                alt: 'My java AI game',
+                width: 150,
+                height: 50,
+              },
+            ]}
+            logosAfter={[
+              {
+                src: '/images/java-ai-code.png',
+                alt: 'My java AI game code',
+                width: 400,
+                height: 150,
+              },
+            ]}
+          >
+            <div className='mt-5 flex-col p-5 lg:mt-0 lg:min-w-fit lg:text-left'>
+              <ul className='mt-5 list-inside list-disc text-left'>
+                <li>Java</li>
+                <li>BlueJ</li>
+                <li>Adversial search</li>
+                <li>Min/max algorithm</li>
+                <li>Alpha beta pruning</li>
+              </ul>
+              <div className='m-4 lg:m-0'>
+                <IconList
+                  icons={[
+                    {
+                      src: '/svg/java.svg',
+                      alt: 'Java Logo',
                     },
                   ]}
                 ></IconList>
