@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Navbar from './components/navbar';
-import Footer from './components/footer';
 import { routesType } from './types/routes.types';
+import NavBar from './components/nav-bar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,12 +17,12 @@ const pages: routesType[] = [
     url: '/',
   },
   {
-    title: 'Projects',
-    url: '/projects',
+    title: 'About',
+    url: '/about',
   },
   {
-    title: 'Messenger',
-    url: '/messenger',
+    title: 'Projects',
+    url: '/projects',
   },
 ];
 
@@ -34,17 +33,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={inter.className}>
-        <Navbar routes={pages}></Navbar>
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
-        {children}
-        <Footer></Footer>
-        <script
-          src='https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js'
-          async
-        ></script>
+      <body
+        className={'mx-5 mt-20 lg:mx-auto lg:w-4/5 xl:w-3/5 ' + inter.className}
+      >
+        <NavBar routes={pages} />
+        <div>{children}</div>
       </body>
     </html>
   );

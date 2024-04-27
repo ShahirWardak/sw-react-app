@@ -12,5 +12,4 @@ export type LogoTextType = {
     alignment?: 'normal' | 'reverse';
     justify?: 'justify-start' | 'justify-center' | 'justify-end' | 'justify-between';
     logos: imageLogo[];
-    logosAfter?: imageLogo[];
 }
