@@ -4,5 +4,8 @@ export type ImageCardType = {
     url: string;
     alt: string;
   };
-  text?: string;
+  rounded?: boolean;
+  border?: boolean;
+  className?: string;
+  children?: Readonly<React.ReactNode>;
 };
