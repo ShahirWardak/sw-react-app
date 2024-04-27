@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <ImageCard
       title='Shahir Wardak'
-      image={{ url: '/images/profile.jpg', alt: 'My profile picture' }}
+      image={{ src: '/images/profile.jpg', alt: 'My profile picture' }}
       rounded={true}
       border={true}
     >
-      <div className='flex flex-col gap-5'>
+      <div className='mt-5 flex flex-col gap-5'>
         <p>
           A dedicated and hard-working individual with a strong passion for
           programming. I graduated from Queen Mary University of London with a

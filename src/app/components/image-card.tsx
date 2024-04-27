@@ -13,7 +13,7 @@ export default function ImageCard(props: ImageCardType) {
           (props.rounded ? 'rounded-full ' : '') +
           (props.border ? 'border-2 border-solid border-discord-100 ' : '')
         }
-        src={props.image.url}
+        src={props.image.src}
         alt={props.image.alt}
         width={300}
         height={200}

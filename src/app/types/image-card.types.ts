@@ -1,9 +1,8 @@
+import { ImageType } from "./image.types";
+
 export type ImageCardType = {
   title?: string;
-  image: {
-    url: string;
-    alt: string;
-  };
+  image: ImageType;
   rounded?: boolean;
   border?: boolean;
   className?: string;
