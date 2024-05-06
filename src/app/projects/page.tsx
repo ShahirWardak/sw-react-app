@@ -6,10 +6,10 @@ import OverlayImage from '../components/overlay-image';
 export default function Projects() {
   return (
     <>
-      <h1 className='animate-fade-up animate-once text-center text-5xl font-medium'>
+      <h1 className='animate-fade-up text-center text-5xl font-medium animate-once'>
         Projects
       </h1>
-      <Container className='animate-delay-[500ms] mt-10 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-10 transition ease-in-out animate-delay-[500ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -93,7 +93,7 @@ export default function Projects() {
         <OverlayImage src='/images/rspb-site.png' alt='RSPB website' />
       </Container>
 
-      <Container className='animate-delay-[1000ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-20 transition ease-in-out animate-delay-[1000ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -158,7 +158,7 @@ export default function Projects() {
         />
       </Container>
 
-      <Container className='animate-delay-[1500ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-20 transition ease-in-out animate-delay-[1500ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -203,7 +203,7 @@ export default function Projects() {
         />
       </Container>
 
-      <Container className='animate-delay-[2000ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-20 transition ease-in-out animate-delay-[2000ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -257,7 +257,7 @@ export default function Projects() {
         <OverlayImage src='/images/blazor-site.png' alt='My blazor site' />
       </Container>
 
-      <Container className='animate-delay-[2500ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-20 transition ease-in-out animate-delay-[2500ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[

@@ -7,10 +7,7 @@ export default function IconList(props: IconListType) {
       {props.icons.map((logo, i) => (
         <Image
           key={i}
-          className={
-            'relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] ' +
-            (logo.invert ? 'dark:invert' : '')
-          }
+          className={'relative ' + (logo.invert ? 'dark:invert' : '')}
           src={logo.src}
           alt={logo.alt}
           width={35}

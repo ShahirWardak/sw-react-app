@@ -4,10 +4,10 @@ import LogoText from '../components/logo-text';
 export default function About() {
   return (
     <>
-      <h1 className='animate-fade-up animate-once text-center text-5xl font-medium'>
+      <h1 className='animate-fade-up text-center text-5xl font-medium animate-once'>
         About this app
       </h1>
-      <Container className='animate-delay-[500ms] mx-auto mt-10 lg:w-4/5'>
+      <Container className='mx-auto mt-10 animate-delay-[500ms] lg:w-4/5'>
         <LogoText
           logos={[
             {
@@ -15,6 +15,7 @@ export default function About() {
               alt: 'React Logo',
               width: 150,
               height: 50,
+              shadow: true,
             },
             {
               src: '/svg/next.svg',
@@ -22,6 +23,7 @@ export default function About() {
               width: 150,
               height: 50,
               invert: true,
+              shadow: true,
             },
           ]}
         >
@@ -35,7 +37,7 @@ export default function About() {
         </LogoText>
       </Container>
 
-      <Container className='animate-delay-[1000ms] mx-auto mt-10 lg:w-4/5'>
+      <Container className='mx-auto mt-10 animate-delay-[1000ms] lg:w-4/5'>
         <LogoText
           alignment='reverse'
           logos={[
@@ -44,6 +46,7 @@ export default function About() {
               alt: 'TailwindCSS Logo',
               width: 200,
               height: 50,
+              shadow: true,
             },
           ]}
         >
@@ -57,7 +60,7 @@ export default function About() {
         </LogoText>
       </Container>
 
-      <Container className='animate-delay-[1500ms] mx-auto mt-10 lg:w-4/5'>
+      <Container className='mx-auto mt-10 animate-delay-[1500ms] lg:w-4/5'>
         <LogoText
           logos={[
             {
@@ -65,6 +68,7 @@ export default function About() {
               alt: 'Azure Logo',
               width: 125,
               height: 50,
+              shadow: true,
             },
             {
               src: '/svg/github.svg',
@@ -72,6 +76,7 @@ export default function About() {
               width: 50,
               height: 50,
               invert: true,
+              shadow: true,
             },
           ]}
         >
