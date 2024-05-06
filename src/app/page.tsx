@@ -5,7 +5,10 @@ export default function Home() {
   return (
     <ImageCard
       title='Shahir Wardak'
-      image={{ src: '/images/profile.jpg', alt: 'My profile picture' }}
+      image={{
+        src: `${process.env.blob}/images/profile.jpg`,
+        alt: 'My profile picture',
+      }}
       rounded={true}
       border={true}
     >
