@@ -14,8 +14,9 @@ export default function LogoText(props: LogoTextType) {
           <Image
             key={i}
             className={
-              'relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] ' +
-              (logo.invert ? 'dark:invert' : '')
+              'relative ' +
+              (logo.invert ? 'dark:invert ' : '') +
+              (logo.shadow ? 'dark:drop-shadow-[0_0_0.3rem_#ffffff70]' : '')
             }
             src={logo.src}
             alt={logo.alt}

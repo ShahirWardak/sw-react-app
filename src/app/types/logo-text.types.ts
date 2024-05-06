@@ -5,6 +5,7 @@ type imageLogo = {
     height: number;
     invert?: boolean;
     priorty?: boolean;
+    shadow?: boolean;
 }
 
 export type LogoTextType = {

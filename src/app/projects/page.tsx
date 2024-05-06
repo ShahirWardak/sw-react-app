@@ -6,15 +6,15 @@ import OverlayImage from '../components/overlay-image';
 export default function Projects() {
   return (
     <>
-      <h1 className='animate-fade-up animate-once text-center text-5xl font-medium'>
+      <h1 className='animate-fade-up text-center text-5xl font-medium animate-once'>
         Projects
       </h1>
-      <Container className='animate-delay-[500ms] mt-10 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-10 transition ease-in-out animate-delay-[500ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
             {
-              src: '/images/rspb-logo.png',
+              src: `${process.env.blob}/images/rspb-logo.png`,
               alt: 'RSPB Logo',
               width: 150,
               height: 50,
@@ -90,15 +90,18 @@ export default function Projects() {
             </div>
           </div>
         </LogoText>
-        <OverlayImage src='/images/rspb-site.png' alt='RSPB website' />
+        <OverlayImage
+          src={`${process.env.blob}/images/rspb-site.png`}
+          alt='RSPB website'
+        />
       </Container>
 
-      <Container className='animate-delay-[1000ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-20 transition ease-in-out animate-delay-[1000ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
             {
-              src: '/images/iamflexi-logo.png',
+              src: `${process.env.blob}/images/iamflexi-logo.png`,
               alt: 'IAmFlexi Logo',
               width: 150,
               height: 50,
@@ -153,17 +156,17 @@ export default function Projects() {
           </div>
         </LogoText>
         <OverlayImage
-          src='/images/iamflexi-site.png'
+          src={`${process.env.blob}/images/iamflexi-site.png`}
           alt='IAmFlexi website image'
         />
       </Container>
 
-      <Container className='animate-delay-[1500ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-20 transition ease-in-out animate-delay-[1500ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
             {
-              src: '/images/unity-game-logo.jpg',
+              src: `${process.env.blob}/images/unity-game-logo.jpg`,
               alt: 'Unity Logo',
               width: 150,
               height: 50,
@@ -198,12 +201,12 @@ export default function Projects() {
           </div>
         </LogoText>
         <OverlayImage
-          src='/videos/unity-gameplay.gif'
+          src={`${process.env.blob}/videos/unity-gameplay.gif`}
           alt='My game gameplay animation'
         />
       </Container>
 
-      <Container className='animate-delay-[2000ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-20 transition ease-in-out animate-delay-[2000ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -254,15 +257,18 @@ export default function Projects() {
             </div>
           </div>
         </LogoText>
-        <OverlayImage src='/images/blazor-site.png' alt='My blazor site' />
+        <OverlayImage
+          src={`${process.env.blob}/images/blazor-site.png`}
+          alt='My blazor site'
+        />
       </Container>
 
-      <Container className='animate-delay-[2500ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-20 transition ease-in-out animate-delay-[2500ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
             {
-              src: '/images/java-ai-game.png',
+              src: `${process.env.blob}/images/java-ai-game.png`,
               alt: 'My java AI game',
               width: 150,
               height: 50,
@@ -291,7 +297,7 @@ export default function Projects() {
           </div>
         </LogoText>
         <OverlayImage
-          src='/images/java-ai-code.png'
+          src={`${process.env.blob}/images/java-ai-code.png`}
           alt='My java AI game code'
         />
       </Container>
