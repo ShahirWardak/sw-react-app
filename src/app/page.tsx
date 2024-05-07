@@ -6,7 +6,7 @@ export default function Home() {
     <ImageCard
       title='Shahir Wardak'
       image={{
-        src: `${process.env.blob}/images/profile.jpg`,
+        src: '/images/profile.jpg',
         alt: 'My profile picture',
       }}
       rounded={true}
