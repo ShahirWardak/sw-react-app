@@ -1,91 +1,38 @@
-import Container from '../components/container';
-import LogoText from '../components/logo-text';
+import ProgressBar from '../components/progress-bar';
 
 export default function About() {
   return (
     <>
-      <Container className='mx-auto mt-10 animate-delay-[500ms] lg:w-4/5'>
-        <LogoText
-          logos={[
-            {
-              src: '/svg/react.svg',
-              alt: 'React Logo',
-              width: 150,
-              height: 50,
-              shadow: true,
-            },
-            {
-              src: '/svg/next.svg',
-              alt: 'Next.js Logo',
-              width: 150,
-              height: 50,
-              invert: true,
-              shadow: true,
-            },
-          ]}
-        >
-          <p>
-            The application is built primarily using the NextJS framework on the
-            React library to allow for creation of components, ease of routing
-            and general tools for building user interfaces. NextJS expands on
-            the capabilities of React and streamlines the development and
-            deployment process.
-          </p>
-        </LogoText>
-      </Container>
+      <div className='mx-auto mt-20 animate-fade-up animate-delay-[500ms] animate-once'>
+        <h3 className='mb-2 text-center text-xl'>Core Tech Stack</h3>
+        <ProgressBar name='Angular' progress='full' />
+        <ProgressBar name='TypeScript' progress='full' />
+        <ProgressBar name='HTML' progress='full' />
+        <ProgressBar name='CSS' progress='11/12' />
+        <ProgressBar name='Git' progress='11/12' />
+        <ProgressBar name='Sass' progress='10/12' />
+        <ProgressBar name='C#' progress='9/12' />
+        <p className='mt-2 text-center text-xs text-neutral-400'>
+          Note: the progress bars are relative to my other skills
+        </p>
+      </div>
 
-      <Container className='mx-auto mt-10 animate-delay-[1000ms] lg:w-4/5'>
-        <LogoText
-          alignment='reverse'
-          logos={[
-            {
-              src: '/svg/tailwindcss.svg',
-              alt: 'TailwindCSS Logo',
-              width: 200,
-              height: 50,
-              shadow: true,
-            },
-          ]}
-        >
-          <p>
-            The styling is handled using TailwindCSS for its extensive out of
-            the box collection of classes, stylised and neat fonts, easy
-            coloring as well as its ease of use when creating responsive
-            designs. The tailwind animations plugin is used to handle the
-            fade-in etc animations.
-          </p>
-        </LogoText>
-      </Container>
-
-      <Container className='mx-auto mt-10 animate-delay-[1500ms] lg:w-4/5'>
-        <LogoText
-          logos={[
-            {
-              src: '/svg/azure.svg',
-              alt: 'Azure Logo',
-              width: 125,
-              height: 50,
-              shadow: true,
-            },
-            {
-              src: '/svg/github.svg',
-              alt: 'GitHub Logo',
-              width: 50,
-              height: 50,
-              invert: true,
-              shadow: true,
-            },
-          ]}
-        >
-          <p>
-            The site is hosted on Microsoft Azure as a static web app and
-            deployed through GitHub actions via the CI/CD pipeline. There is no
-            particular reason Azure was chosen over other services like AWS
-            other than the fact I get free monthly credit as part of my Azure
-            subscription, allowing me to host without extra charges.
-          </p>
-        </LogoText>
-      </Container>
+      <div className='mx-auto mt-20 animate-fade-up animate-delay-[1000ms] animate-once'>
+        <h3 className='mb-2 text-center text-xl'>Additional Skills</h3>
+        <ProgressBar name='JavaScript' progress='full' />
+        <ProgressBar name='Java' progress='10/12' />
+        <ProgressBar name='Microsoft Azure' progress='9/12' />
+        <ProgressBar name='React' progress='8/12' />
+        <ProgressBar name='NextJS' progress='8/12' />
+        <ProgressBar name='.NET' progress='7/12' />
+        <ProgressBar name='Django' progress='7/12' />
+        <ProgressBar name='NPM' progress='6/12' />
+        <ProgressBar name='Unity' progress='4/12' />
+        <ProgressBar name='Unreal Engine' progress='3/12' />
+        <p className='mt-2 text-center text-xs text-neutral-400'>
+          Note: the progress bars are relative to my other skills
+        </p>
+      </div>
     </>
   );
 }
