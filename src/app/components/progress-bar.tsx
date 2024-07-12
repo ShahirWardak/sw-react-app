@@ -10,7 +10,6 @@ export default function ProgressBar(props: ProgressBarType) {
             className={
               'h-3 rounded-lg ' +
               (props.color ?? ' bg-discord-blue ') +
-              ' w-' +
               props.progress
             }
           ></div>
