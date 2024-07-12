@@ -6,10 +6,7 @@ import OverlayImage from '../components/overlay-image';
 export default function Projects() {
   return (
     <>
-      <h1 className='animate-fade-up text-center text-5xl font-medium animate-once'>
-        Projects
-      </h1>
-      <Container className='mt-10 transition ease-in-out animate-delay-[500ms] hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-20 transition ease-in-out animate-delay-[500ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -98,6 +95,80 @@ export default function Projects() {
           justify='justify-between'
           logos={[
             {
+              src: '/svg/react.svg',
+              alt: 'React Logo',
+              width: 150,
+              height: 50,
+            },
+          ]}
+        >
+          <div className='content-center text-left lg:min-h-80'>
+            <h2 className='text-3xl font-medium'>React website</h2>
+            <a
+              href='https://www.shahir.world'
+              className='font-medium text-blue-600 underline underline-offset-2 dark:text-blue-500'
+              target='_blank'
+            >
+              shahir.world
+            </a>
+            <ul className='mt-5 list-inside list-disc text-left'>
+              <li>React framework</li>
+              <li>NextJS</li>
+              <li>HTML, Sass, TypeScript</li>
+              <li>Tailwind CSS</li>
+              <li>Microsoft Azure</li>
+              <li>GitHub actions build pipelines</li>
+            </ul>
+            <div className='m-4 lg:m-0'>
+              <IconList
+                icons={[
+                  {
+                    src: '/svg/react.svg',
+                    alt: 'React Logo',
+                  },
+                  {
+                    src: '/svg/next.svg',
+                    alt: 'Next Logo',
+                    invert: true,
+                  },
+                  {
+                    src: '/svg/html.svg',
+                    alt: 'HTML Logo',
+                  },
+                  {
+                    src: '/svg/typescript.svg',
+                    alt: 'TypeScript Logo',
+                  },
+                  {
+                    src: '/svg/sass.svg',
+                    alt: 'Sass Logo',
+                  },
+                  {
+                    src: '/svg/tailwindcss.svg',
+                    alt: 'Tailwind Logo',
+                  },
+                  {
+                    src: '/svg/azure.svg',
+                    alt: 'Azure Logo',
+                  },
+                  {
+                    src: '/svg/github.svg',
+                    alt: 'GitHub Logo',
+                    invert: true,
+                  },
+                ]}
+              ></IconList>
+            </div>
+          </div>
+        </LogoText>
+        <OverlayImage src='/images/react-site.png' alt='React website' />
+      </Container>
+
+      <Container className='mt-20 transition ease-in-out animate-delay-[1500ms] hover:border-discord-100 2xl:w-4/5'>
+        <LogoText
+          justify='justify-between'
+          logos={[
+            {
               src: '/images/iamflexi-logo.png',
               alt: 'IAmFlexi Logo',
               width: 150,
@@ -158,7 +229,7 @@ export default function Projects() {
         />
       </Container>
 
-      <Container className='mt-20 transition ease-in-out animate-delay-[1500ms] hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-20 transition ease-in-out animate-delay-[2000ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -203,7 +274,7 @@ export default function Projects() {
         />
       </Container>
 
-      <Container className='mt-20 transition ease-in-out animate-delay-[2000ms] hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mt-20 transition ease-in-out animate-delay-[2500ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -257,7 +328,7 @@ export default function Projects() {
         <OverlayImage src='/images/blazor-site.png' alt='My blazor site' />
       </Container>
 
-      <Container className='mt-20 transition ease-in-out animate-delay-[2500ms] hover:border-discord-100 2xl:w-4/5'>
+      <Container className='mb-10 mt-20 transition ease-in-out animate-delay-[3000ms] hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[

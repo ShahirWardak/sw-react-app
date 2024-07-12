@@ -14,21 +14,25 @@ export default function Home() {
     >
       <div className='mt-5 flex flex-col gap-5'>
         <p>
-          A dedicated and hard-working individual with a strong passion for
-          programming. I graduated from Queen Mary University of London with a
-          BSc in Computer Science, where I learned the fundamentals of software
-          engineering, data structures, algorithms, and web development. I also
-          gained valuable experience as a frontend developer for IAmFlexi, a
-          project that aimed to help people find local jobs or workers as well
-          as other small projects such as this one. I am always eager to learn
-          new technologies and improve my skills as a developer.
+          I am a dedicated and passionate software developer with a BSc in
+          Computer Science from Queen Mary University of London. My academic
+          background has provided me with a solid foundation in software
+          engineering, data structures, algorithms, and web development.
         </p>
         <p>
-          Since then, I have picked up many valuable skills through my years in
-          RSPB where I have contributed to the creation and maintenance of web
-          applications that support the charity mission of saving nature. I work
-          with TypeScript, C# and HTML to deliver user-friendly and accessible
-          features that enhance the online presence and engagement of RSPB.
+          Currently, I am contributing my skills at the RSPB, where I develop
+          and maintain web applications that further the mission of saving
+          nature. Utilizing technologies such as TypeScript, C#, and HTML, I
+          focus on delivering accessible and engaging online experiences that
+          bolster RSPB&apos;s digital presence. During my time as a frontend
+          developer at IAmFlexi, I played a key role in a project designed to
+          connect people with local jobs and workers, along with other
+          small-scale projects like this one. This experience has honed my
+          ability to create user-friendly and effective web applications.
+        </p>
+        <p>
+          I am continuously seeking to learn new technologies and refine my
+          expertise to grow as a developer and deliver impactful solutions.
         </p>
       </div>
 

@@ -4,9 +4,6 @@ import LogoText from '../components/logo-text';
 export default function About() {
   return (
     <>
-      <h1 className='animate-fade-up text-center text-5xl font-medium animate-once'>
-        About this app
-      </h1>
       <Container className='mx-auto mt-10 animate-delay-[500ms] lg:w-4/5'>
         <LogoText
           logos={[
