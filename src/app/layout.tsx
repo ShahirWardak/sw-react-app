@@ -33,10 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body
-        className={'mx-5 mt-20 lg:mx-auto lg:w-4/5 xl:w-3/5 ' + inter.className}
-      >
-        <NavBar routes={pages} />
+      <body className={inter.className}>
         <div>{children}</div>
       </body>
     </html>
