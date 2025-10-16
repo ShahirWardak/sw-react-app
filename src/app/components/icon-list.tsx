@@ -10,8 +10,8 @@ export default function IconList(props: IconListType) {
           className={'relative ' + (logo.invert ? 'dark:invert' : '')}
           src={logo.src}
           alt={logo.alt}
-          width={35}
-          height={35}
+          width={30}
+          height={30}
           priority
         />
       ))}
