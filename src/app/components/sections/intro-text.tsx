@@ -9,8 +9,8 @@ export default function IntroText({ text }: IntroTextProps) {
   return (
     <>
       <TextGenerateEffect
-        className='text-2xl text-neutral-300'
-        duration={0.3}
+        className='text-center text-2xl text-neutral-300'
+        duration={2.0}
         words={text ?? ''}
       />
     </>
