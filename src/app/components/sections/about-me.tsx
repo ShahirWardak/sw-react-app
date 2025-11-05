@@ -10,8 +10,8 @@ type IntroTextProps = {
 export default function AboutMe({ text }: IntroTextProps) {
   return (
     <>
-      <div className='flex justify-center gap-32 text-center'>
-        <div className='flex w-1/2 flex-col'>
+      <div className='flex flex-col justify-center gap-16 text-center lg:flex-row lg:gap-32'>
+        <div className='flex flex-col lg:w-1/2'>
           <Image
             className='relative self-center dark:invert'
             src='/svg/user1.svg'
@@ -35,7 +35,7 @@ export default function AboutMe({ text }: IntroTextProps) {
             https://ui.aceternity.com/components/shooting-stars-and-stars-background
           </p>
         </div>
-        <div className='flex w-1/2 justify-center gap-5'>
+        <div className='flex justify-center gap-5 lg:w-1/2'>
           <SkillIconsList
             items={[
               { name: 'C#', icon: '/svg/csharp.svg' },

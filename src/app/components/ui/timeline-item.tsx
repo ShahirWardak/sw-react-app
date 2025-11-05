@@ -25,7 +25,7 @@ export default function TimelineItem(props: itemType) {
           props.className
         }
       >
-        <h2 className='flex items-center gap-3 text-4xl font-bold text-neutral-800 dark:text-neutral-300'>
+        <h2 className='flex items-center gap-3 text-2xl font-bold text-neutral-800 dark:text-neutral-300 lg:text-4xl'>
           <span>{props.title}</span>
           {props.url && (
             <a href={props.url} target='_blank'>

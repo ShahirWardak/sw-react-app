@@ -14,7 +14,7 @@ export default function SkillIconsList(props: { items: Items[] }) {
         {props.items.map((item, i) => (
           <div
             key={i}
-            className='flex h-28 w-44 flex-col items-center justify-between rounded-lg border-2 border-zinc-100 p-2 shadow-md shadow-zinc-500/50'
+            className='flex flex-col items-center justify-between rounded-lg border-2 border-zinc-100 p-2 shadow-md shadow-zinc-500/50 lg:h-28 lg:w-44'
           >
             <Image
               className={
