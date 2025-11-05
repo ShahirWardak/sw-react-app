@@ -16,7 +16,7 @@ export default function Home() {
 
         <div className='mb-60'></div>
 
-        <h2 className='mb-4 text-center text-lg font-extrabold text-black dark:text-neutral-300 md:text-4xl'>
+        <h2 className='mb-20 text-center text-lg font-extrabold text-black dark:text-neutral-300 md:text-4xl'>
           About me
         </h2>
         <AboutMe />

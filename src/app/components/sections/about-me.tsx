@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { TextGenerateEffect } from '../ui/text-generate-effect';
+import SkillIconsList from '../skill-icons-list';
 
 type IntroTextProps = {
   text?: string;
@@ -28,13 +29,39 @@ export default function AboutMe({ text }: IntroTextProps) {
             coding, you’ll probably find me reading, staying active, or
             experimenting with a new side project.
           </p>
-        </div>
-        <div className='flex w-1/2 flex-col'>
           <p>TODO</p>
           <p>
             add blocks: https://benscott.dev/#about add background
             https://ui.aceternity.com/components/shooting-stars-and-stars-background
           </p>
+        </div>
+        <div className='flex w-1/2 justify-center gap-5'>
+          <SkillIconsList
+            items={[
+              { name: 'C#', icon: '/svg/csharp.svg' },
+              { name: 'JavaScript', icon: '/svg/javascript.svg' },
+              {
+                name: 'NextJS',
+                icon: '/svg/next-rounded.svg',
+                invertIcon: true,
+              },
+            ]}
+          />
+          <SkillIconsList
+            items={[
+              { name: 'Typescript', icon: '/svg/typescript.svg' },
+              { name: 'HTML', icon: '/svg/html.svg' },
+              { name: 'Angular', icon: '/svg/angular.svg' },
+              { name: 'React', icon: '/svg/react.svg' },
+            ]}
+          />
+          <SkillIconsList
+            items={[
+              { name: 'Sass', icon: '/svg/sass.svg' },
+              { name: 'Tailwind', icon: '/svg/tailwindcss.svg' },
+              { name: 'Git', icon: '/svg/git.svg' },
+            ]}
+          />
         </div>
       </div>
     </>
