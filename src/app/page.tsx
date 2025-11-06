@@ -5,13 +5,15 @@ import IntroText from './components/sections/intro-text';
 import { Timeline } from './components/ui/timeline';
 import { myIntroText, myTimelineData } from './data/content';
 import AboutMe from './components/sections/about-me';
+import { ShootingStars } from './components/ui/shooting-stars';
+import { StarsBackground } from './components/ui/stars-background';
 
 export default function Home() {
   return (
     <>
       <IntroLamp heading='Shahir Wardak' />
 
-      <div className='container'>
+      <div className='container relative'>
         <IntroText text={myIntroText} />
 
         <div className='mb-32 lg:mb-60'></div>
@@ -30,7 +32,8 @@ export default function Home() {
           <Timeline data={myTimelineData} />
         </div>
 
-        <p>END</p>
+        <ShootingStars className='-z-50' />
+        <StarsBackground className='-z-50' />
       </div>
     </>
   );

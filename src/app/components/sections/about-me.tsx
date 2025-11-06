@@ -29,11 +29,6 @@ export default function AboutMe({ text }: IntroTextProps) {
             coding, you’ll probably find me reading, staying active, or
             experimenting with a new side project.
           </p>
-          <p>TODO</p>
-          <p>
-            add blocks: https://benscott.dev/#about add background
-            https://ui.aceternity.com/components/shooting-stars-and-stars-background
-          </p>
         </div>
         <div className='flex justify-center gap-5 lg:w-1/2'>
           <SkillIconsList
