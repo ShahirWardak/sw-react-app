@@ -7,18 +7,28 @@ import { myIntroText, myTimelineData } from './data/content';
 import AboutMe from './components/sections/about-me';
 import { ShootingStars } from './components/ui/shooting-stars';
 import { StarsBackground } from './components/ui/stars-background';
+import StickyNav from './components/sticky-nav';
 
 export default function Home() {
   return (
     <>
       <IntroLamp heading='Shahir Wardak' />
 
+      <div className='mb-16 lg:mb-32'></div>
+
+      <IntroText text={myIntroText} />
+
+      <div className='mb-10 lg:mb-20'></div>
+
+      <StickyNav />
+
+      <div className='mb-10 lg:mb-20'></div>
+
       <div className='container relative'>
-        <IntroText text={myIntroText} />
-
-        <div className='mb-32 lg:mb-60'></div>
-
-        <h2 className='mb-10 text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'>
+        <h2
+          id='about-section'
+          className='mb-10 text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'
+        >
           About me
         </h2>
         <AboutMe />
@@ -26,7 +36,10 @@ export default function Home() {
         <div className='mb-32 lg:mb-60'></div>
 
         <div className='relative w-full overflow-clip'>
-          <h2 className='text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'>
+          <h2
+            id='timeline-section'
+            className='text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'
+          >
             My works
           </h2>
           <Timeline data={myTimelineData} />
@@ -34,7 +47,10 @@ export default function Home() {
 
         <div className='mb-32 lg:mb-60'></div>
 
-        <h2 className='mb-10 text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'>
+        <h2
+          id='contact-section'
+          className='mb-10 text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'
+        >
           Contact me
         </h2>
 
