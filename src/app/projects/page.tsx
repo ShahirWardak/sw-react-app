@@ -6,7 +6,7 @@ import OverlayImage from '../components/overlay-image';
 export default function Projects() {
   return (
     <>
-      <Container className='mt-20 transition ease-in-out animate-delay-[500ms] hover:border-discord-100 2xl:w-4/5'>
+      <Container className='animate-delay-[500ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -90,7 +90,7 @@ export default function Projects() {
         <OverlayImage src='/images/rspb-site.png' alt='RSPB website' />
       </Container>
 
-      <Container className='mt-20 transition ease-in-out animate-delay-[1000ms] hover:border-discord-100 2xl:w-4/5'>
+      <Container className='animate-delay-[1000ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -164,7 +164,7 @@ export default function Projects() {
         <OverlayImage src='/images/react-site.png' alt='React website' />
       </Container>
 
-      <Container className='mt-20 transition ease-in-out animate-delay-[1500ms] hover:border-discord-100 2xl:w-4/5'>
+      <Container className='animate-delay-[1500ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -229,7 +229,7 @@ export default function Projects() {
         />
       </Container>
 
-      <Container className='mt-20 transition ease-in-out animate-delay-[2000ms] hover:border-discord-100 2xl:w-4/5'>
+      <Container className='animate-delay-[2000ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -274,7 +274,7 @@ export default function Projects() {
         />
       </Container>
 
-      <Container className='mt-20 transition ease-in-out animate-delay-[2500ms] hover:border-discord-100 2xl:w-4/5'>
+      <Container className='animate-delay-[2500ms] mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[
@@ -312,7 +312,7 @@ export default function Projects() {
                     alt: 'DotNet Core Logo',
                   },
                   {
-                    src: '/svg/Azure.svg',
+                    src: '/svg/azure.svg',
                     alt: 'Azure Logo',
                   },
                   {
@@ -328,7 +328,7 @@ export default function Projects() {
         <OverlayImage src='/images/blazor-site.png' alt='My blazor site' />
       </Container>
 
-      <Container className='mb-10 mt-20 transition ease-in-out animate-delay-[3000ms] hover:border-discord-100 2xl:w-4/5'>
+      <Container className='animate-delay-[3000ms] mb-10 mt-20 transition ease-in-out hover:border-discord-100 2xl:w-4/5'>
         <LogoText
           justify='justify-between'
           logos={[

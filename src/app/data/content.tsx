@@ -411,7 +411,7 @@ export const myTimelineData = [
                 alt: 'DotNet Core Logo',
               },
               {
-                src: '/svg/Azure.svg',
+                src: '/svg/azure.svg',
                 alt: 'Azure Logo',
               },
               {
