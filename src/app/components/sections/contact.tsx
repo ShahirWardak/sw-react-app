@@ -18,7 +18,7 @@ export default function ContactSection() {
   return (
     <>
       <div className='flex flex-col justify-center'>
-        <div className='mb-5 flex flex-col self-center lg:w-1/3'>
+        <div className='mb-5 flex w-full flex-col self-center lg:w-1/3'>
           <label htmlFor='name-input' className='font-medium'>
             Name
           </label>
@@ -30,7 +30,7 @@ export default function ContactSection() {
           ></input>
         </div>
 
-        <div className='mb-5 flex flex-col self-center lg:w-1/3'>
+        <div className='mb-5 flex w-full flex-col self-center lg:w-1/3'>
           <label htmlFor='message-input' className='font-medium'>
             Message
           </label>
@@ -42,7 +42,7 @@ export default function ContactSection() {
           ></textarea>
         </div>
 
-        <div className='mb-20 flex flex-col self-center lg:w-1/3'>
+        <div className='mb-20 flex w-full flex-col self-center lg:w-1/3'>
           <button
             className='w-full rounded-sm bg-cyan-800 p-2 text-lg font-bold hover:bg-cyan-700'
             onClick={(e) => {
@@ -55,7 +55,7 @@ export default function ContactSection() {
           </button>
         </div>
 
-        <div className='flex flex-col self-center lg:w-1/3'>
+        <div className='flex w-full flex-col self-center lg:w-1/3'>
           <a href='/files/Shahir Wardak NO NUMBER.pdf'>
             <button className='flex w-full justify-center gap-4 rounded-sm border-2 border-neutral-400 bg-neutral-900 p-4 text-lg font-semibold hover:bg-neutral-800'>
               Download my CV
