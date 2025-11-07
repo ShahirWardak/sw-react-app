@@ -56,7 +56,7 @@ export default function ContactSection() {
         </div>
 
         <div className='flex w-full flex-col self-center lg:w-1/3'>
-          <a href='/files/Shahir Wardak NO NUMBER.pdf'>
+          <a href='/files/Shahir Wardak NO NUMBER.pdf' target='_blank'>
             <button className='flex w-full justify-center gap-4 rounded-sm border-2 border-neutral-400 bg-neutral-900 p-4 text-lg font-semibold hover:bg-neutral-800'>
               Download my CV
               <DownloadIcon />
