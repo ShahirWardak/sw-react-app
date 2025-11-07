@@ -11,7 +11,7 @@
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "engines": {
-    "node": "18"
+    "node": "22.x"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
