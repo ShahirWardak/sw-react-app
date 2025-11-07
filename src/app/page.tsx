@@ -1,63 +1,84 @@
-import Image from 'next/image';
-import ImageCard from './components/image-card';
+'use client';
+import React, { useRef } from 'react';
+import IntroLamp from './components/sections/intro-lamp';
+import IntroText from './components/sections/intro-text';
+import { Timeline } from './components/ui/timeline';
+import { myIntroText, myTimelineData } from './data/content';
+import AboutMe from './components/sections/about-me';
+import { ShootingStars } from './components/ui/shooting-stars';
+import { StarsBackground } from './components/ui/stars-background';
+import StickyNav from './components/sticky-nav';
+import ContactSection from './components/sections/contact';
 
 export default function Home() {
+  const homeRef = useRef<HTMLDivElement | null>(null);
+  const aboutRef = useRef<HTMLDivElement | null>(null);
+  const worksRef = useRef<HTMLDivElement | null>(null);
+  const contactRef = useRef<HTMLDivElement | null>(null);
+
+  const sections = [
+    { id: 'home-section', label: 'Home', ref: homeRef },
+    { id: 'about-section', label: 'About Me', ref: aboutRef },
+    { id: 'timeline-section', label: 'My Works', ref: worksRef },
+    { id: 'contact-section', label: 'Contact', ref: contactRef },
+  ];
+
   return (
-    <ImageCard
-      title='Shahir Wardak'
-      image={{
-        src: '/images/profile.jpg',
-        alt: 'My profile picture',
-      }}
-      rounded={true}
-      border={true}
-    >
-      <div className='mt-5 flex flex-col gap-5'>
-        <p>
-          I am a dedicated and passionate software developer with a BSc in
-          Computer Science from Queen Mary University of London. My academic
-          background has provided me with a solid foundation in software
-          engineering, data structures, algorithms, and web development.
-        </p>
-        <p>
-          Currently, I am contributing my skills at the RSPB, where I develop
-          and maintain web applications that further the mission of saving
-          nature. Utilizing technologies such as TypeScript, C#, and HTML, I
-          focus on delivering accessible and engaging online experiences that
-          bolster RSPB&apos;s digital presence. During my time as a frontend
-          developer at IAmFlexi, I played a key role in a project designed to
-          connect people with local jobs and workers, along with other
-          small-scale projects like this one. This experience has honed my
-          ability to create user-friendly and effective web applications.
-        </p>
-        <p>
-          I am continuously seeking to learn new technologies and refine my
-          expertise to grow as a developer and deliver impactful solutions.
-        </p>
-      </div>
+    <>
+      <span ref={homeRef} id='home-section'></span>
+      <IntroLamp heading='Shahir Wardak' />
 
-      <div className='my-5 flex justify-center gap-10'>
-        <a href='https://github.com/ShahirWardak' target='_blank'>
-          <Image
-            className='invert'
-            src='/svg/github.svg'
-            alt='GitHub Logo'
-            width={40}
-            height={20}
-            priority
-          />
-        </a>
+      <div className='mb-16 lg:mb-32'></div>
 
-        <a href='https://www.linkedin.com/in/shahir-wardak/' target='_blank'>
-          <Image
-            src='/svg/linkedin.svg'
-            alt='LinkedIn Logo'
-            width={40}
-            height={20}
-            priority
-          />
-        </a>
+      <IntroText text={myIntroText} />
+
+      <div className='mb-10 lg:mb-20'></div>
+
+      <StickyNav sections={sections} />
+
+      <div className='mb-10 lg:mb-20'></div>
+
+      <div className='relative'>
+        <div className='container'>
+          <h2
+            ref={aboutRef}
+            id='about-section'
+            className='mb-10 text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'
+          >
+            About me
+          </h2>
+          <AboutMe />
+
+          <div className='mb-32 lg:mb-60'></div>
+
+          <div className='relative w-full overflow-clip'>
+            <h2
+              ref={worksRef}
+              id='timeline-section'
+              className='text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'
+            >
+              My works
+            </h2>
+            <Timeline data={myTimelineData} />
+          </div>
+
+          <div className='mb-20 lg:mb-48'></div>
+
+          <h2
+            ref={contactRef}
+            id='contact-section'
+            className='mb-10 text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'
+          >
+            Contact me
+          </h2>
+          <ContactSection />
+
+          <div className='mb-10 lg:mb-20'></div>
+        </div>
+
+        <ShootingStars className='-z-50' />
+        <StarsBackground className='-z-50' />
       </div>
-    </ImageCard>
+    </>
   );
 }
