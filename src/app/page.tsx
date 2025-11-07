@@ -8,6 +8,7 @@ import AboutMe from './components/sections/about-me';
 import { ShootingStars } from './components/ui/shooting-stars';
 import { StarsBackground } from './components/ui/stars-background';
 import StickyNav from './components/sticky-nav';
+import ContactSection from './components/sections/contact';
 
 export default function Home() {
   const homeRef = useRef<HTMLDivElement | null>(null);
@@ -61,7 +62,7 @@ export default function Home() {
             <Timeline data={myTimelineData} />
           </div>
 
-          <div className='mb-32 lg:mb-60'></div>
+          <div className='mb-20 lg:mb-48'></div>
 
           <h2
             ref={contactRef}
@@ -70,6 +71,9 @@ export default function Home() {
           >
             Contact me
           </h2>
+          <ContactSection />
+
+          <div className='mb-10 lg:mb-20'></div>
         </div>
 
         <ShootingStars className='-z-50' />
