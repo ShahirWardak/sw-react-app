@@ -16,15 +16,15 @@ export default function Home() {
   const contactRef = useRef<HTMLDivElement | null>(null);
 
   const sections = [
-    { id: 'home', label: 'Home', ref: homeRef },
-    { id: 'about', label: 'About Me', ref: aboutRef },
-    { id: 'works', label: 'My Works', ref: worksRef },
-    { id: 'contact', label: 'Contact', ref: contactRef },
+    { id: 'home-section', label: 'Home', ref: homeRef },
+    { id: 'about-section', label: 'About Me', ref: aboutRef },
+    { id: 'timeline-section', label: 'My Works', ref: worksRef },
+    { id: 'contact-section', label: 'Contact', ref: contactRef },
   ];
 
   return (
     <>
-      <span ref={homeRef}></span>
+      <span ref={homeRef} id='home-section'></span>
       <IntroLamp heading='Shahir Wardak' />
 
       <div className='mb-16 lg:mb-32'></div>
@@ -37,38 +37,40 @@ export default function Home() {
 
       <div className='mb-10 lg:mb-20'></div>
 
-      <div className='container relative'>
-        <h2
-          ref={aboutRef}
-          id='about-section'
-          className='mb-10 text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'
-        >
-          About me
-        </h2>
-        <AboutMe />
-
-        <div className='mb-32 lg:mb-60'></div>
-
-        <div className='relative w-full overflow-clip'>
+      <div className='relative'>
+        <div className='container'>
           <h2
-            ref={worksRef}
-            id='timeline-section'
-            className='text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'
+            ref={aboutRef}
+            id='about-section'
+            className='mb-10 text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'
           >
-            My works
+            About me
           </h2>
-          <Timeline data={myTimelineData} />
+          <AboutMe />
+
+          <div className='mb-32 lg:mb-60'></div>
+
+          <div className='relative w-full overflow-clip'>
+            <h2
+              ref={worksRef}
+              id='timeline-section'
+              className='text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'
+            >
+              My works
+            </h2>
+            <Timeline data={myTimelineData} />
+          </div>
+
+          <div className='mb-32 lg:mb-60'></div>
+
+          <h2
+            ref={contactRef}
+            id='contact-section'
+            className='mb-10 text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'
+          >
+            Contact me
+          </h2>
         </div>
-
-        <div className='mb-32 lg:mb-60'></div>
-
-        <h2
-          ref={contactRef}
-          id='contact-section'
-          className='mb-10 text-center text-2xl font-extrabold text-black dark:text-neutral-300 md:text-4xl'
-        >
-          Contact me
-        </h2>
 
         <ShootingStars className='-z-50' />
         <StarsBackground className='-z-50' />
